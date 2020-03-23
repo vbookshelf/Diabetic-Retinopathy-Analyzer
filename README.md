@@ -8,7 +8,7 @@ In other browsers the app may freeze.</i>
 
 <br>
 
-<img src="http://dr.test.woza.work/assets/dr_app.png" width="400"></img>
+<img src="http://dr.test.woza.work/assets/app_pic.png" width="400"></img>
 
 <br>
 
