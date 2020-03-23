@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+<meta charset="utf-8">
+<title>About</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!--CSS Stylesheets-->
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/woza.css">
+
+<!--Link to Font Awesome icons-->
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.2/css/all.css' integrity='sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns' crossorigin='anonymous'>
+
+
+<!--Link to fonts from google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<link rel="shortcut icon" type="image/png" href="robotfavicon.png">
+
+</head>
+
+
+
+
+
+
+<body class="bground-color">
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content. -->
+
+<div style="max-width:1500px">
+<!-- 1. HOME PAGE TAB -->
+<div class="w3-animate-opacity w3-padding w3-margin-bottom bground-color">
+	
+
+	
+
+
+<!-- 960 width region -->
+<div class='w3-content w3-padding w3-white' style="max-width:960px">
+	
+
+
+
+<div class="w3-center title adjust-fontcolor logo w3-center w3-margin">
+	
+	<img class='w3-round' src="assets/robot.jpg" alt="robot" height='200' width='200'>
+	
+</div>
+
+
+<!-- Top Bar -->
+<div class='w3-center'>
+	
+	<p class="space-letters w3-tag bground-color w3-text-teal w3-border w3-round">
+		<a href="index.html"><i class="fa fa-angle-double-left" style="font-size:20px"></i><b> Go back to the future...</b></a>
+</div>
+	
+
+
+
+<div class='bottom-margin'>
+	
+	
+	<!-- Start of block -->
+	<div class='side-margin1 w3-round text-color space-letters 
+	w3-margin-bottom'>
+	
+			<p class='w3-text-pink topp-margin'><b>Design Status</b></p>
+			
+			<p>This is a prototype.</p>
+			
+			
+			<p class='w3-text-pink topp-margin'><b>Purpose</b></p>
+			
+			<p>This web app uses computer vision to detect diabetic retinopathy on fundus (eye) images. It’s a tool to help GP's monitor the eye health of their diabetic patients.</p>
+				
+				
+			<p class='w3-text-pink topp-margin'><b>What problem does this solve?</b></p>
+			
+			<p>Diabetic Retinopathy is the fastest growing cause of preventable blindness. All people with diabetes are at risk. They need to be screened once a year. This screening involves taking a picture of the back of the eye. The picture is called a fundus photo. An eye specialist then diagnoses this photo. In both the developed and the third world there are many towns and rural communities that don't have access to an eye specialist.</p>
+			
+			<p>Today fundus photos can be taken with a mobile phone. This web app makes it possible for a local doctor to use that photo to do a preliminary diagnosis.</p>
+			
+			
+			<p class='w3-text-pink topp-margin'><b>Image Format</b></p>
+			
+			<p>The app accepts images in jpg or png format. The tiff format is not supported.</p>
+
+			
+			<p class='w3-text-pink topp-margin'><b>Limitations</b></p>
+			
+			
+			<p>The Ai brain (model) that powers the app was trained using high quality images taken with professional equipment. Therefore, the model's prediction accuracy could be negatively affected by the lower quality of mobile phone images.</p>
+			
+
+			<p class='w3-text-pink topp-margin'><b>Published Design</b></p>
+			
+			<p>The design code and the step-by-step process used to train and test the model has been published on Kaggle. You can find the open source notebook <a href="https://www.kaggle.com/vbookshelf/dr-mobilenet-binary-classifier-tfjs-web-app" target='_blank' class="w3-text-blue">here</a>. The test results are also available in the notebook.</p>
+			
+			
+			<p class='w3-text-pink topp-margin'><b>Dataset Licence</b></p>
+			
+			<p>The model was trained using image <a href="https://www.kaggle.com/c/aptos2019-blindness-detection/rules" target='_blank' class="w3-text-blue">data</a> that is licenced for non-commercial, academic research and education use only.</p>
+			
+			<hr>
+			
+			
+			
+			
+			<!-- FAQ Section -->
+			
+			
+			<div class="w3-center title adjust-fontcolor logo w3-center w3-margin">
+	
+			<h1 class="space-letters w3-text-pink"><b>FAQ</b></h1>
+
+			</div>
+			
+			
+			
+			<p class='w3-text-black topp-margin'><b>Will I need to wait for the model to download every time I use the app?</b></p>
+			
+			<p>No. Once the model downloads it will be cached in memory. The next time you visit this site you won’t need to wait. </p>
+			
+			<p>That said, I suggest that you always use this tool with your web browser set to incognito mode. The model won’t be saved, but this will ensure that each time you visit this site you will always use latest version of the model and not the old one that's stored in your device's memory.
+			</p>
+			
+			
+			
+			<p class='w3-text-black topp-margin'><b>What about patient data privacy?</b></p>
+			
+			<p>Your images are never sent to an external server. Any image you submit stays on your computer or mobile phone. This is because the model is running on your device. This is also why a batch of images can be analyzed in less than two seconds.</p>
+			
+			<p>In return for a short wait while the model downloads you get data privacy and fast processing. The tech that makes this possible is called Tensorflow.js. It was created by Google.</p>
+			
+			
+			
+			
+			
+			
+			<p class='w3-text-black topp-margin'><b>What do the decimal numbers mean?</b></p>
+			
+			<p>They are probability scores between 0 and 1. They show how confident the model is that a particular condition is present on the image. <br>
+				For example, <i>D-Retinopathy: 0.751</i> means that the model is 75% sure that diabetic retinopathy is present on the image.</p>
+			
+			
+			
+			
+			
+			
+			<p class='w3-text-black topp-margin'><b>How do I use this app on a computer?
+			</b></p>
+			
+			<p>- Go to this site on your computer.<br>
+				- Click the orange button.<br>
+			- Select one image or multiple images and click ‘Open’.<br>
+			- The app will print results for each image.
+			</p>
+			
+			
+			
+			
+			
+			<p class='w3-text-black topp-margin'><b>How do I use this app on a mobile phone?
+			</b></p>
+			
+			<p>You can take a new photo or you can submit photos that are stored on your phone.
+				The steps below apply to Android. iOS may be similar but I'm not sure.</p>
+			
+			<p class="w3-text-pink"><b>[ 1 ] Take a photo</b></p>
+			<p>- Go to this site on your phone.<br>
+			- Tap the orange button.<br>
+			- Select “Camera”<br>
+			- Take a photo<br>
+			- Tap the "tick"<br>
+			- The photo will be sent to the app for analysis.
+			</p>
+			
+			
+			<p class="w3-text-pink"><b>[ 2 ] Use images from your photo folder</b></p>
+			<p>- Go to this site on your phone.<br>
+				- Tap the orange button.<br>
+				- Tap "Files"<br>
+				- Tap the image name<br>
+				- To submit a batch of images, tap each image (tick) to select it and then tap "Open". 
+			</p>
+			
+			
+			
+				
+			<p class='w3-text-black topp-margin'><b> What would it take to make this tool production-ready?</b></p>
+			
+			<p>The training results are excellent. But Ai systems can be brittle. Good training scores don't guarantee that a model will perform well under real-world conditions. This tool first needs to be field tested. Then the model needs to be re-trained to make it more robust.</p>
+			
+		
+				
+				
+				
+			<p class='w3-text-black topp-margin'><b>Where can I send feedback or report bugs?</b></p>
+			
+			<p>Please feel free to email your thoughts or ideas to:<br>
+				<span class="w3-text-pink"><b>contact -at- woza -dot- work</b></span></p>
+				
+				
+			
+			
+			
+		
+	</div>
+	<!-- End of block -->
+	
+</div>
+
+
+
+
+
+</div><!-- End of 960 width region -->
+
+<!-- Bottom Bar -->
+<div class='w3-center w3-margin-top'>
+<p class="space-letters"><a class="w3-small w3-hover-text-deep-orange text-color" href="https://woza.work/">
+		<b>woza.work</b></a>
+	</p>
+</div>
+
+
+
+</div><!--END OF HOME PAGE TAB-->
+</div> <!-- w3-content -->
+</body>
+</html>
+
